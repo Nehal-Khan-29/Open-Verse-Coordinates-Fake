@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sofia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rog fonts", sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: auto;
+    background-color: black;
+}
+
+.front{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom:50px; 
+
+}
+
+.typing1{
+  font-size: large;
+}
+
+.typing2{
+  color: rgb(255, 141, 47);
+  margin-top: 10px;
+  font-size: 28px;
+  background-color: rgb(0, 0, 0, 0);
+  border-radius: 30px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right:15px;
+  
+}
+
+/*-----------------------------------------------------------------------front bag----------------------------------------------------------*/
+#frontbg {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+
+  .typing1,.typing2{
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
